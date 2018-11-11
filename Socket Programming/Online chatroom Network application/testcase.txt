@@ -1,0 +1,36 @@
+2)
+
+connect
+
+3)
+
+create cat 239.0.3.8 6547
+list
+
+4)
+
+bye
+
+5) (2 clients)
+
+name Alex
+name Szebrag
+
+6) (2 clients)
+
+chat cat
+
+7) (3 clients)
+
+connect
+replay cat
+
+8) (at least 2 clients)
+
+delete cat
+list
+
+9) (at least 2 clients)
+
+create bob 239.6.3.0 8766
+list

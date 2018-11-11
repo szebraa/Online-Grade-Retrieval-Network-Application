@@ -1,0 +1,8 @@
+connect 192.168.0.33 30001
+put LM35_Datasheet.pdf
+put 2N3904_NPN_BJT.pdf
+put bdsfdsfd dsfafds adfsdafsd.txt
+put Smart_house_full_cct_schematic_drawing.PNG
+
+
+get blah.txt

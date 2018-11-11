@@ -1,15 +1,6 @@
 
 """
-Echo Client and Server Classes
-
-T. D. Todd
-McMaster University
-
-to create a Client: "python EchoClientServer.py -r client" 
-to create a Server: "python EchoClientServer.py -r server" 
-
-or you can import the module into another file, e.g., 
-import EchoClientServers
+By: Alex Szebrag
 
 """
 
