@@ -2,7 +2,8 @@
 #include <Wire.h>
 #include <LiquidCrystal_I2C.h>
 
-//By: Alex Szebrag
+// By: Alex Szebrag
+// NOTE: YOU WILL ALSO REQUIRED THE FOLLOWING FILE: NewliquidCrystal_1.3.4.zip for this code to work!
 
 LiquidCrystal_I2C lcd(0x3F,2,1,0,4,5,6,7,3,POSITIVE); //ensure LCD is set properly
 int tempsensingPin = 0; // pin A0 for digital temperature value (input)
