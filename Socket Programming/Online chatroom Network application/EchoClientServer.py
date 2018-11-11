@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 
 ########################################################################
-
+"""
+By: Alex Szebrag
+"""
 import socket
 import argparse
 import time
@@ -156,7 +158,7 @@ class Server:
             print("Received: "+ self.recvd_str +" cmd") #used for debugging (may want to comment out later)
             self.recvd_str_arr = self.recvd_str.split(" ")
 
-            if self.recvd_str_arr[0] == Client.LIST_CMD:
+            if self.recvd_str_arr[0] == Client.LIST_CMD and len(self.recvd_str_arr)==1:
                 self.send_output_list(client)
             elif self.recvd_str_arr[0] == Client.CREATE_CMD:
                 self.determine_correct_create_array()

@@ -1,6 +1,6 @@
 
 """
-Alex Szebrag 
+BY: Alex Szebrag 
 
 to create a Client: "python EchoClientServer.py -r client" 
 to create a Server: "python EchoClientServer.py -r server" 
@@ -45,11 +45,11 @@ class Server:
     PUT_RESP = "ok" 
     CONNECT_CMD = "connect " + socket.gethostbyname(socket.gethostname()) +" "+ str(FSP_PORT) #added for lab 3 "connect 192.168.0.33 30001"
 
-    #common file paths added for lab 3
-    CLIENT_LOCAL_DIRECTORY = "C:\\Users\\Szebr\\Desktop\\4DN4_lab_3\\Code\\client_local_files"
-    READ_CLIENT_LOCAL_DIRECTORY = r"C:\Users\Szebr\Desktop\4DN4_lab_3\Code\client_local_files"
-    SERVER_SHARING_DIRECTORY = "C:\\Users\\Szebr\\Desktop\\4DN4_lab_3\\Code\\server_shared_files"
-    READ_SERVER_SHARING_DIRECTORY = r"C:\Users\Szebr\Desktop\4DN4_lab_3\Code\server_shared_files"
+    #common file paths added for lab 3 TO CHANGE EVERYTIME U MOVE FOLDERS!!
+    CLIENT_LOCAL_DIRECTORY = "C:\\Users\\Alex\\Desktop\\Electrical engineering\\4th year (round 2)\\term 2\\Comp Eng 4DN4\\labs\\3\\4DN4_lab_3\\Code\\client_local_files"
+    READ_CLIENT_LOCAL_DIRECTORY = r"C:\Users\Alex\Desktop\Electrical engineering\4th year (round 2)\term 2\Comp Eng 4DN4\labs\3\4DN4_lab_3\Code\client_local_files"
+    SERVER_SHARING_DIRECTORY = "C:\\Users\\Alex\\Desktop\\Electrical engineering\\4th year (round 2)\\term 2\\Comp Eng 4DN4\\labs\\3\\4DN4_lab_3\\Code\\server_shared_files"
+    READ_SERVER_SHARING_DIRECTORY = r"C:\Users\Alex\Desktop\Electrical engineering\4th year (round 2)\term 2\Comp Eng 4DN4\labs\3\4DN4_lab_3\Code\server_shared_files"
 
     #added constants for response to getting scan string from client - lab 3
     MSG = "Alex's File Sharing Service"
@@ -359,6 +359,7 @@ class Server:
                                 continue
                             new_thread2.join() #join thread to the main thread
                             
+                            
                     #handle "rlist" command
                     if self.recvd_str == Server.RLIST_CMD:
                         self.get_shared_directory()#changed to shared dir + update shared dir list
@@ -409,11 +410,11 @@ class Client:
     RLIST_CMD = "rlist" #added for lab 3
     BYE_CMD = "bye" #added for lab 3
 
-    #common directory folders
-    READ_CLIENT_LOCAL_DIRECTORY = r"C:\Users\Szebr\Desktop\4DN4_lab_3\Code\client_local_files"
-    SERVER_SHARING_DIRECTORY = "C:\\Users\\Szebr\\Desktop\\4DN4_lab_3\\Code\\server_shared_files"
-    READ_SERVER_SHARING_DIRECTORY = r"C:\Users\Szebr\Desktop\4DN4_lab_3\Code\server_shared_files"
-    CLIENT_LOCAL_DIRECTORY = "C:\\Users\\Szebr\\Desktop\\4DN4_lab_3\\Code\\client_local_files"
+    #common directory folders TO CHANGE EVERYTIME U CHANGE FOLDER DIRECTORY LOCATION
+    READ_CLIENT_LOCAL_DIRECTORY = r"C:\Users\Alex\Desktop\Electrical engineering\4th year (round 2)\term 2\Comp Eng 4DN4\labs\3\4DN4_lab_3\Code\client_local_files"
+    SERVER_SHARING_DIRECTORY = "C:\\Users\\Alex\\Desktop\\Electrical engineering\\4th year (round 2)\\term 2\\Comp Eng 4DN4\\labs\\3\\4DN4_lab_3\\Code\\server_shared_files"
+    READ_SERVER_SHARING_DIRECTORY = r"C:\Users\Alex\Desktop\Electrical engineering\4th year (round 2)\term 2\Comp Eng 4DN4\labs\3\4DN4_lab_3\Code\server_shared_files"
+    CLIENT_LOCAL_DIRECTORY = "C:\\Users\\Alex\\Desktop\\Electrical engineering\\4th year (round 2)\\term 2\\Comp Eng 4DN4\\labs\\3\\4DN4_lab_3\\Code\\client_local_files"
 
     #constants added for lab 3 - UDP port/boradcasting
     SCAN_TIMEOUT = 3

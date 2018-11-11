@@ -1,6 +1,6 @@
 
 """
-By: Alex Szebrag
+By Alex Szebrag
 
 """
 
