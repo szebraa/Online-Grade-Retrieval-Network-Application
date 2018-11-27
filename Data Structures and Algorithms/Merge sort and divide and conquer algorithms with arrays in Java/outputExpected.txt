@@ -1,0 +1,168 @@
+run:
+Test 1 - Constructor 1:
+List:
+The list is empty
+capacity=6
+size=0
+*************************************************************
+Test 2 - Constructor 2 (sorted input):
+List:
+add
+alpha
+boy
+car
+capacity=8
+size=4
+*************************************************************
+Test 3 - Constructor 2 (unsorted input without repetitions):
+List:
+after
+five
+now
+then
+zoom
+capacity=10
+size=5
+*************************************************************
+Test 4 - Constructor 2 (unsorted input with repetitions):
+List:
+know
+made
+seven
+capacity=8
+size=3
+*************************************************************
+Test 5 - insert at end of list, newword: carab
+List:
+add
+alpha
+boy
+car
+carab
+capacity=8
+size=5
+*************************************************************
+Test 6 - insert inside list, newword: buy
+List:
+add
+alpha
+boy
+buy
+car
+capacity=8
+size=5
+*************************************************************
+Test 7 - insert at front, newword: aaabbb
+List:
+aaabbb
+add
+alpha
+boy
+car
+capacity=8
+size=5
+*************************************************************
+Test 8 - attempt to insert when word is in list, newword: boy
+List:
+add
+alpha
+boy
+car
+capacity=8
+size=4
+*************************************************************
+Test 9 - insert carab in empty list:
+List:
+carab
+capacity=6
+size=1
+*************************************************************
+Test 10 - insert - size==capacity, new word not in list, newword: buy
+List:
+buy
+carab
+caraba
+capacity=4
+size=3
+*************************************************************
+Test 11 - getWordAt(i) - valid index i
+alpha
+*************************************************************
+Test 12 - getWordAt(i) - invalid index i
+java.lang.ArrayIndexOutOfBoundsException: This index is not valid!
+*************************************************************
+Test 13 - getWordAt(i) - invalid index i
+java.lang.ArrayIndexOutOfBoundsException: This index is not valid!
+*************************************************************
+Test 14 - find - key not in list, key is buy
+Key not found
+returned index: -1
+*************************************************************
+Test 15 - find - key  in list, key is mm
+returned index: 7
+*************************************************************
+Test 16 - remove - word not in list, word is buy
+List: 
+add
+alpha
+boy
+car
+capacity=8
+size=4
+*************************************************************
+Test 17 - remove from inside or beginning, word is boy
+List: 
+add
+alpha
+car
+capacity=8
+size=3
+*************************************************************
+Test 18 - remove from empty list
+List: 
+The list is empty
+capacity=6
+size=0
+*************************************************************
+Test 19 - sublist from empty list 
+sublist: 
+The list is empty
+capacity=0
+size=0
+*************************************************************
+Test 20 - empty sublist from non empty list 
+sublist: 
+The list is empty
+capacity=0
+size=0
+*************************************************************
+Test 21 - non-empty sublist 
+sublist: 
+ha
+haha
+ma
+me
+mm
+my
+capacity=12
+size=6
+*************************************************************
+Test 22 - non-empty sublist 
+sublist: 
+ma
+me
+mm
+my
+capacity=8
+size=4
+*************************************************************
+Test 23 - sublist is a prefix or a suffix
+sublist: 
+fall
+flag
+fly
+ha
+haha
+capacity=10
+size=5
+BUILD SUCCESSFUL (total time: 0 seconds)
