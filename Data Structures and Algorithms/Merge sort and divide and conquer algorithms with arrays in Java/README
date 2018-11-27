@@ -1,0 +1,4 @@
+The WordList Java file mainly consists of code in order to do things efficiently with arrays.
+Things such as: creating the array, sorting the array, inserting into an array, deleting from an array, removing duplicates within
+an array, finding the index that belongs to an input string within an array, and creating a subarray from the original
+array are all done relatively efficiently (based off the divide and conquer algorithm/model)
